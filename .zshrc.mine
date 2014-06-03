@@ -1,0 +1,26 @@
+ANDROIDSDK_HOME=/Users/takatsu/Developer/Android/android-sdk-macosx
+ANDROIDNDK_HOME=/Users/takatsu/Developer/Android/android-ndk-r8b
+export PATH=$PATH:${ANDROIDSDK_HOME}/tools:${ANDROIDSDK_HOME}/platform-tools:${ANDROIDNDK_HOME}
+
+# MacPorts Installer addition on 2012-07-06_at_14:57:33: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+alias finder='open .'
+alias firefox='open -a firefox'
+alias prev='open -a Preview'
+alias iterm='open -a iTerm'
+alias xcode='open -a xcode'
+alias mail='open -a Mail'
+alias cal='open -a iCal'
+alias mi='open -a mi'
+alias system="open -a 'System Preferences'"
+alias hfcca='python ~/work/100_Tools/hfcca-1.7.1/hfcca.py'
+
+#alias sl='screen -ls'
+#alias sr='screen -rU'
+
+# load vcs_info-hook configurations file
+#
+[ -f ${HOME}/.zshrc.mine.vcs_info ] && source ${HOME}/.zshrc.mine.vcs_info
+
+eval "$(rbenv init - zsh)"
