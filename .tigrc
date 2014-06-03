@@ -1,0 +1,7 @@
+# main viewの左端にコミットIDを表示する
+set show-id = yes
+
+# デフォルトの !git gc を無効化して文頭／文末移動にする
+bind generic g move-first-line
+bind generic G move-last-line
+
