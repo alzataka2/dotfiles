@@ -16,6 +16,16 @@ alias mi='open -a mi'
 alias system="open -a 'System Preferences'"
 alias hfcca='python ~/work/100_Tools/hfcca-1.7.1/hfcca.py'
 
+function grep_rec() {
+  grep -rn $1 .
+}
+alias g='grep_rec'
+
+function grep_reci() {
+  grep -rin $1 .
+}
+alias gi='grep_reci'
+
 #alias sl='screen -ls'
 #alias sr='screen -rU'
 
